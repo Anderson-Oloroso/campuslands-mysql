@@ -1,0 +1,16 @@
+INSERT INTO rankingBR (nombre_equipo, puesto, puntos, cantidad_kills, cantidad_muertes) VALUES
+('Furia Latina', 1, 2850, 142, 58),
+('Titanes Gaming', 2, 2675, 128, 64),
+('Dragones Rojos', 3, 2490, 119, 71),
+('Legion Urbana', 4, 2310, 105, 76),
+('Halcones Elite', 5, 2185, 98, 82),
+('Guerreros Pro', 6, 2040, 91, 87),
+('Panteras Negras', 7, 1925, 86, 93),
+('Lobos del Norte', 8, 1810, 79, 96),
+('Tormenta Azul', 9, 1695, 73, 101),
+('Guardianes BR', 10, 1580, 68, 105),
+('Comandos X', 11, 1475, 62, 110),
+('Fenix Squad', 12, 1360, 57, 114),
+('Reyes del Battle', 13, 1245, 51, 119),
+('Zona Mortal', 14, 1130, 46, 125),
+('Ultimos Sobrevivientes', 15, 980, 39, 132);
