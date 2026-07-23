@@ -1,0 +1,33 @@
+INSERT INTO skin_shooter (skin_name, skin_description) VALUES
+('Dragon Rojo', 'Skin con diseño de dragon rojo y detalles de fuego'),
+('Fantasma Urbano', 'Skin de estilo urbano con tonos oscuros y camuflaje'),
+('Guerrero Neon', 'Skin futurista con detalles brillantes de color neon'),
+('Operador Tactico', 'Skin militar con camuflaje y equipamiento tactico'),
+('Cazador Nocturno', 'Skin oscura inspirada en un cazador de la noche'),
+('Soldado Dorado', 'Skin metalica con acabado dorado y elegante'),
+('Comando Arctic', 'Skin de combate con camuflaje blanco para zonas frias'),
+('Samurai Rojo', 'Skin inspirada en guerreros samurai con armadura roja'),
+('Agente Sombra', 'Skin sigilosa con diseño negro y detalles grises'),
+('Guardian Galactico', 'Skin futurista inspirada en exploradores espaciales'),
+('Mercenario Desertico', 'Skin con camuflaje adaptado para ambientes deserticos'),
+('Cyber Ninja', 'Skin tecnologica inspirada en un ninja futurista'),
+('Pirata de Acero', 'Skin con apariencia de pirata y armadura metalica'),
+('Comando Volcanico', 'Skin inspirada en lava y ambientes volcanicos'),
+('Rey de Hielo', 'Skin con diseño congelado y detalles de hielo');
+
+INSERT INTO inventario_skins (skin_id, skin_quantity) VALUES
+(1, 12),
+(2, 8),
+(3, 15),
+(4, 6),
+(5, 10),
+(6, 4),
+(7, 13),
+(8, 7),
+(9, 11),
+(10, 5),
+(11, 9),
+(12, 14),
+(13, 3),
+(14, 16),
+(15, 6);
