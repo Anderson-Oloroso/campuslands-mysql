@@ -17,3 +17,10 @@ CREATE TABLE Proyectos (
     fecha_creacion DATE NOT NULL,
     FOREIGN KEY (artista_id) REFERENCES Artistas(artista_id)
 );
+
+CREATE TABLE Proyecto_Software (
+    proyecto_id INT NOT NULL,
+    software_nombre VARCHAR(50) NOT NULL,
+    PRIMARY KEY (proyecto_id, software_nombre),
+    FOREIGN KEY (proyecto_id) REFERENCES Proyectos(proyecto_id)
+);
