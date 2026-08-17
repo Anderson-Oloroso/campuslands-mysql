@@ -10,3 +10,14 @@ SELECT
 FROM paquetes_turisticos p
 LEFT JOIN reservas r ON p.paquete_id = r.paquete_id
 GROUP BY p.paquete_id, p.destino;
+
+-- 2. Análisis del origen de los turistas
+
+SELECT 
+    t.pais_origen,
+    COUNT(DISTINCT t.turista_id) AS total_clientes,
+    COUNT(r.reserva_id) AS reservas_realizadas,
+    COALESCE(SUM(r.personas), 0) AS total_pasajeros
+FROM turistas t
+LEFT JOIN reservas r ON t.turista_id = r.turista_id
+GROUP BY t.pais_origen
