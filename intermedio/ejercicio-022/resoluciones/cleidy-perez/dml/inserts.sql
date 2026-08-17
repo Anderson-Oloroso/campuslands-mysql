@@ -1,7 +1,7 @@
 -- Datos de practica. Puedes cambiarlos o agregar mas filas.
-USE campuslands_mysql;
+USE plattform_animacion;
 
-INSERT INTO intermedio_ejercicio_022 (nombre, categoria, puntaje, estado) VALUES
-('Alpha 022', 'principal', 72.50, 'activo'),
-('Beta 022', 'secundario', 57.00, 'revision'),
-('Gamma 022', 'principal', 42.75, 'activo');
+-- Insertar Temáticas
+INSERT INTO tematicas (nombre, descripcion) VALUES
+('animacion 3D', 'Principios, flujos de trabajo, cámaras y dinámicas en animación tridimensional.'),
+('modelado 3D', 'Creación de mallas, topología y escultura digital.');
