@@ -13,3 +13,10 @@ INSERT INTO Proyecto_Software (proyecto_id, software_nombre) VALUES
 (101, 'Clip Studio Paint'),
 (101, 'Photoshop'),
 (102, 'Procreate');
+
+INSERT INTO Proyecto_Etiquetas (proyecto_id, etiqueta) VALUES
+(101, 'Sci-Fi'),
+(101, 'Ilustración'),
+(101, 'Neón'),
+(102, 'Naturaleza'),
+(102, 'Concept Art');
