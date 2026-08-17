@@ -8,3 +8,8 @@ INSERT INTO Artistas (artista_id, nombre, email) VALUES
 INSERT INTO Proyectos (proyecto_id, titulo, artista_id, fecha_creacion) VALUES
 (101, 'Retrato Cyberpunk', 1, '2026-01-15'),
 (102, 'Paisaje Fantasía', 2, '2026-02-10');
+
+INSERT INTO Proyecto_Software (proyecto_id, software_nombre) VALUES
+(101, 'Clip Studio Paint'),
+(101, 'Photoshop'),
+(102, 'Procreate');
