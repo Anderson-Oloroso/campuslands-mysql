@@ -1,9 +1,7 @@
 -- Consultas base. Completa o reemplaza segun el enunciado.
-USE campuslands_mysql;
-
-SELECT * FROM intermedio_ejercicio_022;
-
-SELECT categoria, COUNT(*) AS total_registros, AVG(puntaje) AS promedio
-FROM intermedio_ejercicio_022
-GROUP BY categoria
-ORDER BY promedio DESC;
+-- Actualizar el título y la dificultad del Ejercicio 022
+UPDATE ejercicios 
+SET 
+    titulo = 'normalizacion 2FN para animacion 3D', 
+    dificultad = 'Intermedio aplicado' 
+WHERE codigo = 'EJ-022';
