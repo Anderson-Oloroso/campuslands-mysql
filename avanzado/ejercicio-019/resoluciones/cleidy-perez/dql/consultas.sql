@@ -29,4 +29,28 @@ BEGIN
     WHERE instructor_id = NEW.instructor_id;
 END//
 
+DROP TRIGGER IF EXISTS trg_after_update_precio_salto//
+
+CREATE TRIGGER trg_after_update_precio_salto
+AFTER UPDATE ON saltos
+FOR EACH ROW
+BEGIN
+    IF OLD.precio <> NEW.precio THEN
+        INSERT INTO auditoria_saltos (
+            salto_id, 
+            precio_anterior, 
+            precio_nuevo, 
+            usuario, 
+            fecha_modificacion
+        )
+        VALUES (
+            OLD.salto_id, 
+            OLD.precio, 
+            NEW.precio, 
+            USER(), 
+            NOW()
+        );
+    END IF;
+END//
+
 DELIMITER ;
