@@ -1,5 +1,5 @@
 -- Consultas base. Completa o reemplaza segun el enunciado.
-USE campuslands_mysql;
+USE tienda_ropa;
 
 -- Consulta A: Obtener todos los clientes y sus compras (incluyendo los que NO han comprado)
 SELECT 

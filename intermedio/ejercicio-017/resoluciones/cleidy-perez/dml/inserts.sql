@@ -1,5 +1,5 @@
 -- Datos de practica. Puedes cambiarlos o agregar mas filas.
-USE campuslands_mysql;
+USE tienda_ropa;
 
 INSERT INTO productos (nombre, categoria, precio) VALUES
 ('Camisa Casual Manga Larga', 'Camisas', 35.00),
