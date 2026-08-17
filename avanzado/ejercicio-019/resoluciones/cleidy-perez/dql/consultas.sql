@@ -11,3 +11,22 @@ CREATE TABLE IF NOT EXISTS auditoria_saltos (
     fecha_modificacion DATETIME
 );
 
+DELIMITER //
+
+-- ============================================================
+-- 1. TRIGGER: Actualización automática de saltos del instructor
+-- Incremente el contador 'saltos_certificados' del instructor 
+-- cada vez que se inserta un nuevo salto.
+-- ============================================================
+DROP TRIGGER IF EXISTS trg_after_insert_salto//
+
+CREATE TRIGGER trg_after_insert_salto
+AFTER INSERT ON saltos
+FOR EACH ROW
+BEGIN
+    UPDATE instructores
+    SET saltos_certificados = saltos_certificados + 1
+    WHERE instructor_id = NEW.instructor_id;
+END//
+
+DELIMITER ;
