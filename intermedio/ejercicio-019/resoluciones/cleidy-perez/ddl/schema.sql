@@ -10,3 +10,9 @@ CREATE TABLE paracaidistas (
     nombre VARCHAR(100) NOT NULL,
     nivel_experiencia VARCHAR(50) NOT NULL -- 'Principiante', 'Intermedio', 'Avanzado'
 );
+
+CREATE TABLE instructores (
+    instructor_id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    saltos_certificados INT NOT NULL
+);
