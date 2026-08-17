@@ -9,3 +9,11 @@ CREATE TABLE A rtistas (
     nombre VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE
 );
+
+CREATE TABLE Proyectos (
+    proyecto_id INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(150) NOT NULL,
+    artista_id INT NOT NULL,
+    fecha_creacion DATE NOT NULL,
+    FOREIGN KEY (artista_id) REFERENCES Artistas(artista_id)
+);
