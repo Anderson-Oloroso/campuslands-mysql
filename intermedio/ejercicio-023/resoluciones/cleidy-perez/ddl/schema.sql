@@ -38,3 +38,16 @@ CREATE TABLE IF NOT EXISTS estudiantes (
     nombre VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- 5. Tabla Entregas
+CREATE TABLE IF NOT EXISTS entregas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_ejercicio INT NOT NULL,
+    id_estudiante INT NOT NULL,
+    url_render VARCHAR(255) NOT NULL,
+    estado ENUM('Pendiente', 'En Revisión', 'Aprobado', 'Rechazado') DEFAULT 'Pendiente',
+    calificacion DECIMAL(4,2) DEFAULT NULL,
+    fecha_entrega DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_ejercicio) REFERENCES ejercicios(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
