@@ -1,9 +1,13 @@
 -- Consultas base. Completa o reemplaza segun el enunciado.
-USE campuslands_mysql;
+USE escuela_paracaidismo;
 
-SELECT * FROM intermedio_ejercicio_019;
-
-SELECT categoria, COUNT(*) AS total_registros, AVG(puntaje) AS promedio
-FROM intermedio_ejercicio_019
-GROUP BY categoria
-ORDER BY promedio DESC;
+-- Consulta 1: Instructores con más de 2 saltos realizados y un total facturado mayor a $500
+SELECT 
+    i.instructor_id,
+    i.nombre AS instructor,
+    COUNT(s.salto_id) AS total_saltos,
+    SUM(s.precio) AS ingresos_totales
+FROM instructores i
+JOIN saltos s ON i.instructor_id = s.instructor_id
+GROUP BY i.instructor_id, i.nombre
+HAVING COUNT(s.salto_id) >= 2 AND SUM(s.precio) > 500.00;
