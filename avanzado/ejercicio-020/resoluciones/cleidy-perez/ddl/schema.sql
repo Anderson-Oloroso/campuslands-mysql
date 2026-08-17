@@ -14,3 +14,9 @@ CREATE TABLE clientes (
     email VARCHAR(100) NOT NULL,
     telefono VARCHAR(20)
 );
+
+CREATE TABLE tatuadores (
+    tatuador_id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    estilo_especialidad VARCHAR(50) NOT NULL -- 'Realismo', 'Tradicional', 'Neotradicional', 'Blackwork'
+);
