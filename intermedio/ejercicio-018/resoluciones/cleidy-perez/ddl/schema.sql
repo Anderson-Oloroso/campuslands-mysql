@@ -11,3 +11,9 @@ CREATE TABLE turistas (
     nombre VARCHAR(100) NOT NULL,
     pais_origen VARCHAR(50) NOT NULL
 );
+CREATE TABLE paquetes_turisticos (
+    paquete_id INT AUTO_INCREMENT PRIMARY KEY,
+    destino VARCHAR(100) NOT NULL,
+    precio_por_noche DECIMAL(10, 2) NOT NULL,
+    descuento_porcentaje DECIMAL(5, 2) DEFAULT 0.00
+);
