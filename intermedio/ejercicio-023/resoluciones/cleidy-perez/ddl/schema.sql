@@ -10,3 +10,10 @@ CREATE TABLE IF NOT EXISTS tematicas (
     nombre VARCHAR(100) NOT NULL UNIQUE,
     descripcion TEXT
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- 2. Tabla Instructores (Elimina dependencia transitiva del ejercicio)
+CREATE TABLE IF NOT EXISTS instructores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
