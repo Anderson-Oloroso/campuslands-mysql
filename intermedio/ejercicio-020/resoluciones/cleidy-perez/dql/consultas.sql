@@ -15,3 +15,14 @@ WHERE c.costo > (
     SELECT AVG(costo) 
     FROM citas
 );
+
+SELECT 
+    cliente_id,
+    nombre,
+    email
+FROM clientes
+WHERE cliente_id IN (
+    SELECT DISTINCT cliente_id
+    FROM citas
+    WHERE estado = 'Completada'
+);
