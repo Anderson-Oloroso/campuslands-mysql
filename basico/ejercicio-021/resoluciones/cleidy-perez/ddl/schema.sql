@@ -24,3 +24,10 @@ CREATE TABLE Proyecto_Software (
     PRIMARY KEY (proyecto_id, software_nombre),
     FOREIGN KEY (proyecto_id) REFERENCES Proyectos(proyecto_id)
 );
+
+CREATE TABLE Proyecto_Etiquetas (
+    proyecto_id INT NOT NULL,
+    etiqueta VARCHAR(50) NOT NULL,
+    PRIMARY KEY (proyecto_id, etiqueta),
+    FOREIGN KEY (proyecto_id) REFERENCES Proyectos(proyecto_id)
+);
