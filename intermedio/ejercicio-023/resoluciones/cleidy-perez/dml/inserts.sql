@@ -33,3 +33,11 @@ INSERT INTO estudiantes (nombre, email) VALUES
 ('Diana Rios', 'diana.rios@mail.com'),
 ('Eduardo Silva', 'edu.silva@mail.com'),
 ('Fernanda López', 'fer.lopez@mail.com');
+
+INSERT INTO entregas (id_ejercicio, id_estudiante, url_render, estado, calificacion, fecha_entrega) VALUES
+(4, 1, 'https://storage.academia.com/renders/ale_ej023.png', 'Aprobado', 9.80, '2026-03-01 10:15:00'),
+(4, 2, 'https://storage.academia.com/renders/beatriz_ej023.png', 'Aprobado', 8.50, '2026-03-01 11:30:00'),
+(4, 3, 'https://storage.academia.com/renders/chris_ej023.png', 'En Revisión', NULL, '2026-03-02 09:00:00'),
+(1, 4, 'https://storage.academia.com/renders/diana_ej020.png', 'Aprobado', 10.00, '2026-02-20 14:20:00'),
+(2, 5, 'https://storage.academia.com/renders/edu_ej021.png', 'Rechazado', 4.00, '2026-02-22 16:45:00'),
+(4, 6, 'https://storage.academia.com/renders/fer_ej023.png', 'Pendiente', NULL, '2026-03-02 12:10:00');
