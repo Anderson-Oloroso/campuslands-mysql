@@ -1,0 +1,28 @@
+-- Campuslands MySQL - basico ejercicio 011
+-- Ejecuta este archivo antes de inserts.sql.
+
+CREATE DATABASE IF NOT EXISTS campuslands_mysql;
+USE campuslands_mysql;
+
+DROP TABLE IF EXISTS basico_ejercicio_011;
+
+CREATE TABLE basico_ejercicio_011 (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(120) NOT NULL,
+  id_categoria INT NOT NULL,
+  puntaje DECIMAL(10,2) NOT NULL DEFAULT 0,
+  estado ENUM
+    ('activo','
+    revision',
+    'inactivo') 
+  NOT NULL DEFAULT 'activo',
+  creado_en DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (id_categoria) REFERENCES categorias(id_categoria)
+);
+
+-- TABLA CON VALIDACIONES 
+
+CREATE TABLE categorias(
+  id_categoria INT AUTO _INCREMENT PRIMARY KEY,
+  categoria VARCHAR(80) NOT NULL
+);
