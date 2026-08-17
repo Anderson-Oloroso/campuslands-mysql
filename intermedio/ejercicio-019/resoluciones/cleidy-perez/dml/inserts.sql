@@ -5,3 +5,8 @@ INSERT INTO paracaidistas (nombre, nivel_experiencia) VALUES
 ('Mariana Torres', 'Intermedio'),
 ('Diego Mendoza', 'Avanzado'),
 ('Sofia Castillo', 'Principiante');
+
+INSERT INTO instructores (nombre, saltos_certificados) VALUES
+('Carlos Vane', 1200),
+('Elena Rostova', 850),
+('Marcos Silva', 2100);
