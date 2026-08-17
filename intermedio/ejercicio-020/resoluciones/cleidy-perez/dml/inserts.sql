@@ -6,3 +6,8 @@ INSERT INTO clientes (nombre, email, telefono) VALUES
 ('Camila Morales', 'camila.m@email.com', '+502 5555-0103'),
 ('Daniel Ortiz', 'daniel.ortiz@email.com', '+502 5555-0104');
 
+INSERT INTO tatuadores (nombre, estilo_especialidad) VALUES
+('Sofi "Inks" Navarro', 'Realismo'),
+('Marcos "Kuro" Silva', 'Blackwork'),
+('Elena Vega', 'Neotradicional'),
+('Gabriel Soto', 'Tradicional');
