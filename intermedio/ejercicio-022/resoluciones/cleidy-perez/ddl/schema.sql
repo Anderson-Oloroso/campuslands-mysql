@@ -25,3 +25,17 @@ CREATE TABLE IF NOT EXISTS ejercicios (
         FOREIGN KEY (id_tematica) REFERENCES tematicas(id) 
         ON DELETE RESTRICT ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Tabla 3: Entregas (Proyectos desarrollados por alumnos)
+CREATE TABLE IF NOT EXISTS entregas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_ejercicio INT NOT NULL,
+    nombre_alumno VARCHAR(100) NOT NULL,
+    url_archivo_3d VARCHAR(255),
+    estado ENUM('Pendiente', 'En Revisión', 'Aprobado', 'Rechazado') DEFAULT 'Pendiente',
+    calificacion DECIMAL(4,2) DEFAULT NULL,
+    fecha_entrega TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT fk_entregas_ejercicios 
+        FOREIGN KEY (id_ejercicio) REFERENCES ejercicios(id) 
+        ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
