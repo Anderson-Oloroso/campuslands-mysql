@@ -11,3 +11,17 @@ CREATE TABLE IF NOT EXISTS tematicas (
     descripcion TEXT,
     fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Tabla 2: Ejercicios
+CREATE TABLE IF NOT EXISTS ejercicios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    codigo VARCHAR(20) NOT NULL UNIQUE,
+    titulo VARCHAR(150) NOT NULL,
+    dificultad VARCHAR(50) NOT NULL,
+    id_tematica INT NOT NULL,
+    instrucciones TEXT,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT fk_ejercicios_tematicas 
+        FOREIGN KEY (id_tematica) REFERENCES tematicas(id) 
+        ON DELETE RESTRICT ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
