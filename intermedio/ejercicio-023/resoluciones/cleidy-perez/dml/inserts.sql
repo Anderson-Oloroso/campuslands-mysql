@@ -25,3 +25,11 @@ INSERT INTO ejercicios (codigo, titulo, dificultad, id_tematica, id_instructor, 
 ('EJ-023', 'normalizacion 3FN para arquitectura 3D', 'Intermedio aplicado', 1, 4, 'Modulo de datos para academia de arquitectura 3D.', 'Practicar normalización 3FN en MySQL desde cero.'),
 ('EJ-024', 'Materiales Complejos de Concreto y Cristal', 'Avanzado', 4, 5, 'Estructura brutalista moderna.', 'Configurar mapas de rugosidad y refracción avanzados.'),
 ('EJ-025', 'Recorrido Virtual Animado', 'Avanzado aplicado', 2, 6, 'Presentación de conjunto habitacional.', 'Animar cámaras fijas y en movimiento suave.');
+
+INSERT INTO estudiantes (nombre, email) VALUES
+('Alejandro Navarro', 'ale.navarro@mail.com'),
+('Beatriz Castillo', 'b.castillo@mail.com'),
+('Christian Vega', 'chris.vega@mail.com'),
+('Diana Rios', 'diana.rios@mail.com'),
+('Eduardo Silva', 'edu.silva@mail.com'),
+('Fernanda López', 'fer.lopez@mail.com');
