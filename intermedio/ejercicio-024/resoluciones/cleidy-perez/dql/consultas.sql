@@ -1,9 +1,12 @@
 -- Consultas base. Completa o reemplaza segun el enunciado.
-USE campuslands_mysql;
-
-SELECT * FROM intermedio_ejercicio_024;
-
-SELECT categoria, COUNT(*) AS total_registros, AVG(puntaje) AS promedio
-FROM intermedio_ejercicio_024
-GROUP BY categoria
-ORDER BY promedio DESC;
+SELECT 
+    e.codigo AS codigo_ejercicio,
+    e.titulo AS ejercicio,
+    e.dificultad,
+    eq.codigo_equipo,
+    eq.modelo AS equipo,
+    a.nombre AS area_ubicacion
+FROM ejercicios e
+INNER JOIN equipos eq ON e.id_equipo = eq.id
+INNER JOIN areas a ON eq.id_area = a.id
+WHERE e.codigo = 'EJ-024';
