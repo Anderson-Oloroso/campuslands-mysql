@@ -1,0 +1,101 @@
+USE campuslands_mysql;
+
+INSERT INTO personajes_rpg (
+    nombre,
+    clase,
+    nivel,
+    puntos_vida,
+    experiencia,
+    oro,
+    estado
+) VALUES
+(
+    'Arthas',
+    'Guerrero',
+    35,
+    4200,
+    125000,
+    1850.50,
+    'activo'
+),
+(
+    'Lyra',
+    'Maga',
+    28,
+    2100,
+    98500,
+    2400.00,
+    'activo'
+),
+(
+    'Kael',
+    'Arquero',
+    31,
+    2750,
+    112000,
+    1750.75,
+    'activo'
+),
+(
+    'Mira',
+    'Sacerdote',
+    22,
+    2400,
+    76500,
+    1320.25,
+    'activo'
+),
+(
+    'Draven',
+    'Guerrero',
+    42,
+    5100,
+    168000,
+    3200.00,
+    'activo'
+),
+(
+    'Selene',
+    'Asesino',
+    38,
+    2600,
+    145500,
+    2850.50,
+    'activo'
+),
+(
+    'Orion',
+    'Paladin',
+    45,
+    5600,
+    190000,
+    4100.00,
+    'activo'
+),
+(
+    'Neris',
+    'Maga',
+    19,
+    1800,
+    52000,
+    850.00,
+    'inactivo'
+),
+(
+    'Ragnar',
+    'Berserker',
+    50,
+    6200,
+    225000,
+    5200.75,
+    'activo'
+),
+(
+    'Elara',
+    'Druida',
+    25,
+    2300,
+    83000,
+    1450.00,
+    'inactivo'
+);
