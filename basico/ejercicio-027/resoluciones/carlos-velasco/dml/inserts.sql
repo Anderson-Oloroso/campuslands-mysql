@@ -1,0 +1,112 @@
+USE campuslands_mysql;
+
+INSERT INTO personajes_aventura (
+    nombre,
+    clase,
+    nivel,
+    vida,
+    ataque,
+    defensa,
+    oro,
+    estado
+) VALUES
+(
+    'Aldric',
+    'Guerrero',
+    35,
+    4800,
+    720,
+    650,
+    1850.00,
+    'activo'
+),
+(
+    'Elena',
+    'Arquera',
+    28,
+    3200,
+    680,
+    390,
+    1425.50,
+    'activo'
+),
+(
+    'Kael',
+    'Mago',
+    41,
+    2700,
+    890,
+    310,
+    2350.75,
+    'activo'
+),
+(
+    'Mira',
+    'Exploradora',
+    24,
+    3500,
+    590,
+    420,
+    980.00,
+    'activo'
+),
+(
+    'Darian',
+    'Guerrero',
+    47,
+    5600,
+    850,
+    780,
+    3250.00,
+    'activo'
+),
+(
+    'Lyra',
+    'Asesina',
+    32,
+    2900,
+    810,
+    350,
+    2175.25,
+    'activo'
+),
+(
+    'Orion',
+    'Paladin',
+    52,
+    6200,
+    790,
+    920,
+    4100.00,
+    'activo'
+),
+(
+    'Nora',
+    'Curandera',
+    19,
+    2500,
+    420,
+    300,
+    725.50,
+    'inactivo'
+),
+(
+    'Ragnar',
+    'Berserker',
+    45,
+    5900,
+    940,
+    540,
+    3650.00,
+    'activo'
+),
+(
+    'Selene',
+    'Hechicera',
+    38,
+    3100,
+    870,
+    360,
+    2920.75,
+    'inactivo'
+);
