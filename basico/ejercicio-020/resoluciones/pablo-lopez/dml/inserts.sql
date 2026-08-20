@@ -84,7 +84,7 @@ INSERT INTO tatuajes (
 (
     'Alejandro Gomez',
     'Andres Morales',
-    'Acuarela',
+    'Acuarela', 
     16.00,
     700.00,
     '2026-08-23',
