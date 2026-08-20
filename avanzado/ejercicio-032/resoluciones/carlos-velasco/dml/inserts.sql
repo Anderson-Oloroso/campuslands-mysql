@@ -1,0 +1,101 @@
+USE campuslands_mysql;
+
+INSERT INTO jugadores_battle_royale (
+    nombre_jugador,
+    plataforma,
+    partidas_jugadas,
+    victorias,
+    eliminaciones,
+    puntos,
+    estado
+) VALUES
+(
+    'ShadowX',
+    'PC',
+    120,
+    28,
+    385,
+    4820,
+    'activo'
+),
+(
+    'NovaKing',
+    'PC',
+    115,
+    25,
+    342,
+    4510,
+    'activo'
+),
+(
+    'Raptor99',
+    'PlayStation',
+    108,
+    21,
+    310,
+    4180,
+    'activo'
+),
+(
+    'LunaStrike',
+    'Xbox',
+    102,
+    19,
+    295,
+    3975,
+    'activo'
+),
+(
+    'DarkWolf',
+    'PC',
+    98,
+    17,
+    270,
+    3650,
+    'activo'
+),
+(
+    'PixelHunter',
+    'PlayStation',
+    91,
+    15,
+    244,
+    3410,
+    'activo'
+),
+(
+    'StormAce',
+    'Xbox',
+    87,
+    13,
+    221,
+    3150,
+    'activo'
+),
+(
+    'FireNova',
+    'PC',
+    80,
+    11,
+    198,
+    2890,
+    'activo'
+),
+(
+    'GhostPlayer',
+    'PlayStation',
+    75,
+    8,
+    160,
+    2480,
+    'activo'
+),
+(
+    'IronFox',
+    'Xbox',
+    70,
+    6,
+    142,
+    2190,
+    'inactivo'
+);

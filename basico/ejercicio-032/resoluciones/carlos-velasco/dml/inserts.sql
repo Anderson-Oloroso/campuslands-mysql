@@ -1,0 +1,112 @@
+USE ranking_battle_royale;
+
+INSERT INTO jugadores (
+    nombre_usuario,
+    pais,
+    nivel,
+    puntos_ranking,
+    partidas_jugadas,
+    victorias,
+    fecha_registro,
+    activo
+) VALUES
+(
+    'ShadowHunter',
+    'Guatemala',
+    42,
+    1850.50,
+    320,
+    86,
+    '2025-02-15',
+    TRUE
+),
+(
+    'StormRider',
+    'Mexico',
+    38,
+    1725.75,
+    280,
+    72,
+    '2025-03-20',
+    TRUE
+),
+(
+    'NightWolf',
+    'Colombia',
+    45,
+    2100.00,
+    410,
+    125,
+    '2024-11-10',
+    TRUE
+),
+(
+    'FireGhost',
+    'Argentina',
+    31,
+    1480.25,
+    210,
+    51,
+    '2025-05-08',
+    TRUE
+),
+(
+    'IceFalcon',
+    'Chile',
+    36,
+    1650.80,
+    275,
+    68,
+    '2025-01-25',
+    TRUE
+),
+(
+    'DarkVenom',
+    'Guatemala',
+    29,
+    1325.40,
+    185,
+    39,
+    '2025-06-14',
+    TRUE
+),
+(
+    'BlazeKing',
+    'Peru',
+    48,
+    2250.90,
+    450,
+    142,
+    '2024-09-18',
+    TRUE
+),
+(
+    'SilverFox',
+    'Costa Rica',
+    27,
+    1190.60,
+    160,
+    31,
+    '2025-07-02',
+    FALSE
+),
+(
+    'ThunderAce',
+    'El Salvador',
+    40,
+    1785.35,
+    300,
+    79,
+    '2025-02-28',
+    TRUE
+),
+(
+    'CrimsonBlade',
+    'Honduras',
+    33,
+    1545.15,
+    240,
+    57,
+    '2025-04-12',
+    TRUE
+);
