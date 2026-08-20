@@ -1,0 +1,16 @@
+# Ejercicio 060 - relaciones simples para equipo de streaming
+
+## Ejecución
+
+1. Ejecutar `ddl/schema.sql`.
+2. Ejecutar `dml/inserts.sql`.
+3. Ejecutar `dql/consultas.sql`.
+
+## Decisiones técnicas
+
+- Se utilizó la base de datos `campuslands_mysql`.
+- Se crearon las tablas `categorias_equipo` y `equipos_streaming`.
+- Se estableció una relación uno a muchos mediante `FOREIGN KEY`.
+- Se aplicó `UNIQUE`, `CHECK` y `ENUM` como restricciones.
+- Se insertaron 5 categorías y 10 equipos.
+- Se utilizaron `JOIN`, `LEFT JOIN`, `COUNT`, `AVG`, filtros, ordenamientos y `LIMIT`.
